@@ -1,0 +1,42 @@
+ .btn{
+ 	width: 200px;
+ 	height: 30px;
+ 	background:#4C95F6;
+ 	border: none;
+ 	display: table;
+ 	margin: 3px auto;
+ 	color: white;
+ }
+ *{margin: 0px auto; font-family: sertig;font-weight: bold;}
+ body{
+ background: #2BBC58;	
+ }
+ #wrapper{
+ 	display: table;
+ 	margin: 0px auto;
+ 	width: auto;
+ 	height: auto;
+ 	padding: 20% 0%;
+ }
+ .formGroup{
+ 	width: auto;
+ 	height: auto;
+ }
+ .form{
+ 	padding:10px;
+ 	display: table;
+ 	margin: 0px auto;
+ }
+ .frontTitle{
+ 	width: 300px;
+ 	text-align: center;
+ }
+ .inputText{
+ 	text-align: center;
+ 	padding: 10px;
+ 	width: 200px;
+ 	height: 30px;
+ 	border: 1px solid #E3F7E8;
+ 	margin: 1px;
+ 	font-size: 15px;
+ }

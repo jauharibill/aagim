@@ -1,0 +1,45 @@
+@mixin trans($data){
+	transition:$data;
+	-o-transition:$data;
+	-moz-transition:$data;
+	-webkit-transition:$data;
+	-ms-transition:$data;
+}
+@mixin linking(){
+	a{text-decoration: none;}	
+	a:hover{text-decoration: none;}	
+	a:link{text-decoration: none;}	
+	a:visited{text-decoration: none;}	
+	a:active{text-decoration: none;}	
+}
+@mixin center(){
+	display: table;
+	margin: 0px auto;
+	padding: 0px;
+}
+@mixin marginpadding(){
+	margin: 5px;
+	padding: 5px;
+}
+@mixin mobileSize(){
+	min-width: 320px;
+	max-width: 480px;
+	min-height: 320px;
+}
+@mixin borderRadius($data){
+	border-radius: $data;
+	-moz-border-radius: $data;
+	-ms-border-radius: $data;
+	-o-border-radius: $data;
+	-webkit-border-radius: $data;
+}
+@mixin fontProperti(){
+	color: white;
+	font-weight: bold;
+}
+@mixin HorVerCenter(){
+	position: relative;
+display: table;
+float: center;
+top: 20%;
+}

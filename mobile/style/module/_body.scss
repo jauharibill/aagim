@@ -1,0 +1,81 @@
+html,body{
+	height: 100%;
+	width: 100%;	
+}
+
+%propertiFont{
+	font-weight: bold;
+	color: white;
+}
+*{font-family: "sertig";margin: 0px auto;}
+.body{
+	float: left;
+	width: 100%;
+}
+.header{
+	@include center();
+	background: #4183D7;
+	width: 100%;
+	height: 50px;
+}
+.menu{
+	float: right;
+	padding: 15px 50px;
+}
+.menu div{
+float: left;
+max-width:200px;
+min-width: 70px;
+
+/*/padding: 0px;*/
+@extend %propertiFont;
+text-align: center;
+@include trans(0.1s);
+}
+.menu div:hover{
+border-bottom: 3px solid white;
+}
+.title{
+	float: left;
+	font-size: 20px;
+	padding: 15px 30px;
+	@extend %propertiFont;
+}
+.display-body{
+	margin: 20px;
+}
+#cam-div{
+	background: black;
+}#map-div{
+	float: left;
+	width: 500px;
+	height: 500px;
+	background-image: url("../img/loading.gif");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#map-atribute{
+	float: left;
+	width: 300px;
+	height: auto;
+	padding: 10px;
+	border: 1px solid gray;
+	border-radius: 3px;
+	padding: 10px;
+}
+#set-div{
+	background: yellow;
+}
+#menu-atribute button{
+	width: 90px;
+	height: 30px;
+	background: #4183D7;
+	color: white;
+	border: 1px solid black;
+	float: left;
+	border-radius: 3px;
+	margin: 5px;
+}
+#mapLocation{
+	@include %center;
+}

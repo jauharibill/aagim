@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "sertig";
+  src: url("font/Sertig.otf"); }
+html, body {
+  height: 100%; }
+
+* {
+  margin: 0px auto;
+  padding: 0px;
+  font-family: "sertig"; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+
+.menu {
+  z-index: 1;
+  display: table;
+  margin: 0px auto;
+  padding: 0px;
+  height: 10%; }
+
+.menu div {
+  color: #00AB84;
+  font-weight: bold;
+  float: left;
+  margin: 5px;
+  padding: 5px; }
+
+.content-layout {
+  /*@include mobileSize();*/
+  height: 90%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #41A85F; }
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #95E100;
+  border: 4px solid #7FC900;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  display: table;
+  float: center;
+  top: 20%; }
+
+#maps {
+  min-width: 320px;
+  height: 90%;
+  /*	background-image: url("../img/globo.GIF");
+  	background-repeat: no-repeat;
+  	display: table;
+  	float: center;*/ }
+
+#formUpload {
+  display: table;
+  padding: 20% auto; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+a:link {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+/*# sourceMappingURL=mobile.css.map */

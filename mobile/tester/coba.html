@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("#ImageBrowse").on("change",function(){
+			alert($(this).val());
+			$("#ImageBrowse2").text($(this).val());
+		});
+	});
+	</script>
+</head>
+<body>
+<form name="photo" id="formUpload" enctype="multipart/form-data" method="post">
+    <input type="file" id="ImageBrowse" name="file" size="30"/>
+    <input type="file" id="ImageBrowse2" name="file2" size="30"/>
+    <input type="submit" name="upload" value="Upload" />
+</form>
+</body>
+</html>

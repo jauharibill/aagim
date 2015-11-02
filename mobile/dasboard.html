@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get location</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/googleMaps.js"></script>
+	<script type="text/javascript" src="js/mobile.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+</head>
+<body>
+<div class="container">
+<div class="menu">
+	<a href="#"><div id="cam">Camera</div></a>
+	<a href="#"><div id="map">Maps</div></a>
+	<a href="#"><div id="set">Setting</div></a>
+	<a href="index.html"><div id="logout">Logout</div></a>
+</div>		
+	<div id="camera" class="content-layout">
+	<form class="formUpload" name="formUpload" id="formUpload">	
+
+  	<button type="button" class="btn" id="btnGetLocation">Get My Location</button>
+	<button type="button" class="btn" id="manualInputLocation">Manual Input</button>
+  	</form>
+
+</div>
+<div id="maps" class="content-layout">
+	<div class=""></div>
+</div>
+<div id="setting" class="content-layout">
+<form name="formSetting" id="formSetting" method="post">
+<select name="MapType">
+	<option value="SATELLITE">Satellite</option>
+	<option value="TERRAIN">Terrain</option>
+	<option value="ROAD">Road</option>
+</select>
+<button type="button" id="saveSetting">Save Setting</button>
+
+</form>
+</div>
+</div>
+
+</body>
+</html>
